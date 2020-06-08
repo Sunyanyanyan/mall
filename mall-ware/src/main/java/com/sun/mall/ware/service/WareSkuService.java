@@ -1,0 +1,20 @@
+package com.sun.mall.ware.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.sun.common.utils.PageUtils;
+import com.sun.mall.ware.entity.WareSkuEntity;
+
+import java.util.Map;
+
+/**
+ * 商品库存
+ *
+ * @author sunyan
+ * @email syan_2019@163.com
+ * @date 2020-05-18 21:11:04
+ */
+public interface WareSkuService extends IService<WareSkuEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
